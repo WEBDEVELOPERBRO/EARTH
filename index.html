@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH</title>
+</head>
+<body>
+    <!-- HEADER SECTION  -->
+     <header class="header">
+        <div class="header-containar">
+            <nav>
+                <div class="logo">
+                    <h1>EARTH</h1>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-btn" >
+                    <img src="img/menu.svg" alt="">
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1>EARTH</h1>
+                <p>ENDLESS POTENTIOL</p>
+                <button class="primary-btn">EXPLORE</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICE SECTION  -->
+
+    <section class="service">
+        <div class="service-containar">
+            <div class="service-card">
+                <div class="images">
+                    <img src="img/service-1.png" alt="">
+                </div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus.</p>
+            </div>
+        
+        <div class="service-card">
+            <div class="images">
+                <img src="img/service-2.png" alt="">
+            </div>
+            <h2>Content Creation</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus.</p>
+        </div>
+        <div class="service-card">
+            <div class="images">
+                <img src="img/service-3.png" alt="">
+            </div>
+            <h2>Grapic Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- ABOUT SECTION  -->
+
+    <section class="about">
+        <div class="about-containar">
+            <div class="about-left">
+                <h1>ABOUT US</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, soluta temporibus quibusdam velit eaque accusamus possimus enim quisquam consequuntur ipsam excepturi? In, inventore est. Commodi doloribus sequi perspiciatis vitae nulla nobis inventore eaque iste aspernatur?</p>
+            </div>
+            <div class="about-left">
+                <div class="images">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT TALK TO US SECTION  -->
+
+    <section class="talk-to-us">
+        <div class="talk-to-us-containar">
+            <h1>TALK TO US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe inventore.</p>
+            <button class="primary-btn">
+                GET IN TOUCH
+            </button>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION   -->
+
+    <footer class="footer">
+        <div class="footer-containar">
+            <ul class="footer-list ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1>DEEN</h1>
+            <p>@2025 all right Reserved</p>
+        </div>
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-btn");
+    const navList = document.querySelector(".nav-list");
+
+    // Toggle menu visibility on button click
+    menuBtn.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+
+    // Optional: Close the menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!menuBtn.contains(event.target) && !navList.contains(event.target)) {
+            navList.classList.remove("active");
+        }
+    });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

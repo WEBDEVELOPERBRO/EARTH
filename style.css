@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Jost', sans-serif;  /* Fixed incorrect font family case */
+}
+
+img{
+    width: 100%;
+    height: auto;  /* Changed height to auto for better responsiveness */
+    display: block; /* Ensures margin auto works for centering */
+    margin: auto;
+}
+
+h1, h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: .5em;
+}
+
+a, p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: .2em;
+}
+
+section{
+    margin: 100px 0;
+    padding: 1rem;
+}
+
+.menu-btn{
+    background: #4caf50;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    display: none;
+}
+
+.menu-btn img{
+    width: 30px;
+    height: 30px;
+}
+
+/* HEADER SECTION  */
+.header{
+    width: 100%;
+    height: 70vh;
+    background-image: url(img/main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-containar{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.logo h1 {
+    font-size: 1rem;
+    color: #4caf50;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-list li a {
+    color: rgb(13, 132, 92);
+    cursor: pointer;
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    color: #4caf50;
+}
+
+.header-content p{
+    color: #4caf50;
+    font-size: 30px;
+    text-align: center;
+}
+
+.primary-btn{
+    color: white;
+    background: #4caf50;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+}
+
+/* SERVICE SECTION  */
+.service{
+    width: 100%;
+    height: auto;
+}
+
+.service-containar{
+    max-width: 900px;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.service-card{
+    flex-basis: 30%;
+    padding: .5em;
+}
+
+.service-card h2, .service-card p{  /* Fixed selector mistake */
+    padding: 0;
+    font-size: 1rem;
+    margin: auto;
+}
+
+/* ABOUT SECTION  */
+.about{
+    width: 100%;
+    height: auto;
+}
+
+.about-containar{
+    max-width: 900px;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: auto;
+}
+
+.about-left,
+.about-right{
+    flex-basis: 47%;
+    padding: .5em;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ABOUT TALK TO US SECTION */
+
+.talk-to-us{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/about-bannerr.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.talk-to-us-containar{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.talk-to-us-containar h1{
+    color: #4caf50;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.talk-to-us-containar p{
+    width: 400px;
+    text-align: center;
+}    
+    
+
+
+/* FOOTER SECTION  */
+
+.footer{   
+    width: 100%;
+    margin-top: 30px;
+    padding: 1rem;
+    min-height: 60px;
+}
+
+.footer-containar{
+    max-width: 900px;
+    margin: auto;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex: 1 1 1;
+}
+
+
+.footer-containar .footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-containar .footer-list a{
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.footer-containar  h1{
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.footer-containar p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px){
+
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .header-content p {
+        font-size: 22px;
+    }
+
+    nav .nav-list {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 80px;  /* Removed duplicate padding */
+    }
+
+    .nav-list li {
+        border-bottom: 2px solid #4caf50;
+        width: 100%;
+        text-align: right;
+        padding: 1rem;
+    }
+
+    nav .nav-list{
+        display: none;  /* Hidden by default */
+    }
+
+    nav .nav-list.active{
+        display: flex; /* Correctly displays when active */
+        align-items: center;
+        gap: 32px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .service-containar{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .service-containar .images{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .service-containar .images img {
+        width: 80%;
+    }
+
+    .service-card h2, .service-card p{
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-containar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-containar h1, .about-containar p{
+        margin: auto;
+        width: 90%;
+    }
+
+    .about-right .images{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-containar .images img{
+        width: 80%;
+    }
+
+
+    /* FOOTER SECTION  */
+
+    .footer{
+        margin: 50px 0 0 0;
+    }
+
+    .footer-containar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+}

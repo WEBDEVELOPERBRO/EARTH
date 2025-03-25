@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Jost', sans-serif;  /* Fixed incorrect font family case */
+}
+
+img{
+    height: auto;  /* Changed height to auto for better responsiveness */
+    display: block; /* Ensures margin auto works for centering */
+    margin: auto;
+}
+
+h1, h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: .5em;
+}
+
+a, p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: .2em;
+}
+
+section{
+    margin: 100px 0;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.menu-btn{
+    width: 40px;
+    background: #4caf50;
+    position: absolute;
+    right: 1rem;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ABOUT HEADER SECTION  */
+
+.about{
+    width: 100%;
+    height: 70vh;
+    padding: 1rem;
+    background-image: url(img/services-banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-containar{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.logo h1{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #4caf50;
+}
+
+nav{
+    width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-list a{
+    color: #222;
+}
+
+.about-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #4caf50;
+    text-align: center;
+}
+
+
+/* ABOUT CONTENT SECTION  */
+
+.mission{
+    width: 100%;
+    height: auto;
+}
+
+.mission-containar{
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 25px;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.content h1,p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.content h1{
+    font-size: 2rem;
+    color: #222;
+    width: 100%;
+    text-align: left;
+}
+
+
+ /* ABOUT__TALK TO US */
+
+.talk-to-us{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/about-bannerr.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.talk-to-us-containar{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.talk-to-us-containar h1{
+    font-size: 2rem;
+    color: #4caf50;
+    font-weight: 500;
+}
+
+
+.talk-to-us-containar p{
+    max-width: 400px;
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+}
+
+
+.primary-btn{
+    background: #4caf50;
+    border: none;
+    outline: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+    /* FOOTER SECTION  */
+
+.footer{
+    width: 100%;
+    min-height: 60px;
+    padding: 1rem;
+    margin: 30px 0 ;
+}
+
+.footer-containar{
+    max-width: 900px;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: auto;
+}
+
+
+.footer-containar h1,a,p{
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERISH  */
+
+@media screen and (width < 600px){
+    /* ABOUT HEADER SECTION  */
+
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-list{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        justify-content: start;
+        padding: 80px 0; 
+    }
+
+    .nav-list li{
+        width: 100%;
+        text-align: right;
+        border-bottom: 2px solid #4caf50;
+        padding: 1rem ;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-list.active{
+        display: flex;
+    }
+
+/* ABOUT CONTENT SECTION  */
+
+.mission-containar{
+    flex-direction: column;
+}
+
+.mission-containar .images{
+    width: 80%;
+    margin: auto;
+}
+
+.mission-containar img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+}
+

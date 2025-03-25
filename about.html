@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT PAGE</title>
+</head>
+<body>
+    
+    <!-- HEADER SECTION  -->
+
+    <header class="about">
+        <div class="about-containar">
+            <nav>
+                <div class="logo">
+                    <h1>
+                        EARTH
+                    </h1>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <img src="img/menu.svg" alt="">
+                </div>
+            </nav>
+
+            <div class="about-content">
+                <h1>
+                    WHO ARE WE ?
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="mission">
+        <div class="mission-containar">
+            <div class="images">
+                <img src="img/about.png" alt="">
+            </div>
+            <div class="content">
+                <h1>OUR MISSION</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, consequuntur. Nisi, mollitia labore? Veniam nobis pariatur sint odit quis ducimus veritatis tempora corporis doloribus sequi aspernatur, temporibus laudantium natus provident eligendi. Consequatur omnis aliquid necessitatibus sapiente dolor laudantium quisquam sed maiores dolore nobis, placeat ullam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ABOUT__TALK TO US -->
+
+    <section class="talk-to-us">
+        <div class="talk-to-us-containar">
+            <h1>TALK TO US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum.</p>
+            <button class="primary-btn">GET IN TOUCH</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- FOOTER SECTION  -->
+
+    <footer class="footer">
+        <div class="footer-containar">
+            <ul class="footer-list ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1>DEEN</h1>
+            <p>@2025 all right Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".menu-btn");
+        const navList = document.querySelector(".nav-list");
+    
+        // Toggle menu visibility on button click
+        menuBtn.addEventListener("click", function () {
+            navList.classList.toggle("active");
+        });
+    
+        // Optional: Close the menu when clicking outside
+        document.addEventListener("click", function (event) {
+            if (!menuBtn.contains(event.target) && !navList.contains(event.target)) {
+                navList.classList.remove("active");
+            }
+        });
+    });
+    
+    </script>
+
+
+
+</body>
+</html>
